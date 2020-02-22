@@ -1,0 +1,202 @@
+@font-face {
+    font-family: SourceSansPro-Regular;
+    src: url('fonts/encode-sans/EncodeSans-Regular.ttf');
+}
+@font-face {
+    font-family: SourceSansPro-Bold;
+    src: url('fonts/encode-sans/EncodeSans-Bold.ttf');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+div:empty {
+    display: none;
+}
+
+:root {
+    --primary-1: #06d2f2;
+    --primary-2: #faa72a;
+    --primary-3: #FDD835;
+    --border: #CDD9ED;
+    --border-hover: #99A3BA;
+    --text-color: #6C7486;
+    --text-color-headline: #3F4656;
+    --shadow: rgba(22, 30, 50, .04);
+}
+
+body {
+    font-family: SourceSansPro-Regular;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--text-color);
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    padding: 24px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--shadow);
+    border: 1px solid var(--border);
+    margin: 0 0 40px 0;
+}
+
+h1 {
+    font-family: SourceSansPro-Bold;
+    font-size: 22px;
+    line-height: 22px;
+    color: var(--text-color);
+    margin: 0;
+}
+
+hr {
+    display: none;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    margin-top: 22px;
+}
+
+.input-c2 {
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 48%;
+}
+.input-c1 {
+    padding: 0px;
+    width: 100%;
+}
+.input-c3 {
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 31.333333%;
+}
+.spl-c1-1 {
+    padding: 0px;
+    width: 100%;
+}
+.spl-c2-1 {
+    padding-left: 0%;
+    padding-right: 1%;
+    width: 49%;
+}
+.spl-c2-2 {
+    padding-left: 1%;
+    padding-right: 0%;
+    width: 49%;
+}
+.spl-c3-1 {
+    padding-left: 0%;
+    padding-right: 1%;
+    width: 32%;
+}
+.spl-c3-2 {
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 32%;
+}
+.spl-c3-3 {
+    padding-left: 1%;
+    padding-right: 0%;
+    width: 32%;
+}
+
+.menu-input-text, .menu-select {
+    width: 100%;
+    box-sizing: border-box;
+    --color: var(--primary-1);
+    outline: none;
+    display: block;
+    width: 100%;
+    -webkit-appearance: none;
+    background: #fff;
+    border: 1px solid var(--border);
+    padding: 8px 16px;
+    line-height: 22px;
+    font-size: 14px;
+    color: var(--text-color);
+    border-radius: 6px;
+    transition: border .3s ease;
+}
+
+.menu-input-text::placeholder {
+    color: var(--border-hover);
+}
+
+.menu-input-text::-webkit-input-placeholder {
+    color: var(--border-hover);
+}
+
+.menu-label {
+    display: inline-block;
+    margin-top: .5rem;
+    color: var(--text-color-headline);
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+
+.menu-select {
+    padding: .4rem;
+}
+
+.menu-input-text:focus, .menu-select:focus {
+    outline: none;
+    border-color: var(--primary-2);
+}
+
+select option:active, select option:checked {
+    color: #FFF!important;
+    background: linear-gradient(var(--primary-2), var(--primary-2));
+}
+
+select option {
+    padding: .2rem .4rem;
+    border-radius: .4rem;
+    margin-bottom: .2rem;
+}
+
+button:first-child {
+    margin-top: 0px;
+}
+
+button {
+    --color: var(--primary-1);
+    --text: #fff;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    position: relative;
+    white-space: nowrap;
+    border: none;
+    color: var(--text);
+    padding: 9px 24px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    background: var(--color);
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all .3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:first-child {
+    margin-top: 0px;
+}

@@ -1,4 +1,4 @@
-local web = CreateWebUI(0, 0, 0, 0, 1, 16)
+local web = CreateWebUI(0, 0, 0, 0, 1, 60)
 SetWebAlignment(web, 0, 0)
 SetWebAnchors(web, 0, 0, 1, 1)
 SetWebURL(web, "http://asset/"..GetPackageName().."/dialog.html")
